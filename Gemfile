@@ -16,6 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'jwt'
 
+gem 'rubocop-rspec', '= 1.27.0'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -30,10 +31,10 @@ gem 'bootsnap', '= 1.3.2', require: false
 # gem 'rack-cors'
 
 group :test do
- gem 'factory_bot_rails', '~> 4.0'
- gem 'shoulda-matchers', '~> 3.1'
- gem 'faker'
  gem 'database_cleaner'
+ gem 'factory_bot_rails', '~> 4.0'
+ gem 'faker'
+ gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development, :test do
